@@ -1,0 +1,11 @@
+name: extended-zoom
+displayName: "Extended Zoom"
+author: "[accent][cyan]Vlad The [red]Evil [cyan]Cat"
+description: 
+'''
+Feature A: Zoom is extended to [0.5 <-> 25]
+'''
+version: 1
+minGameVersion: 125.1
+dependencies: []
+hidden: true
