@@ -1,11 +1,8 @@
 name: extended-zoom
 displayName: "Extended Zoom"
-author: "[accent][cyan]Vlad The [red]Evil [cyan]Cat"
-description: 
-'''
-Feature A: Zoom is extended to [0.5 <-> 25]
-'''
-version: 1
+author: "[cyan]Vlad The [red]Evil [cyan]Cat"
+description: "Extended Zoom! [to 0.5 <-> 25]"
+version: 1.1
 minGameVersion: 125.1
 dependencies: []
 hidden: true
