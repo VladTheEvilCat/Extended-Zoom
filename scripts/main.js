@@ -29,4 +29,4 @@ function updateZoom(min, max){
 	}
 }
 
-updateZoom(maxZoomLim,minZoomLim)
+updateZoom(minZoomLim,maxZoomLim)
