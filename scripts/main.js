@@ -2,8 +2,8 @@
 
 const defaultMinZoomLim = Vars.renderer.minZoom;
 const defaultMaxZoomLim = Vars.renderer.maxZoom;
-console.log("default min zoom: "+defaultMinZoomLim);
-console.log("defaultn max zoom: "+defaultMaxZoomLim)
+// console.log("default min zoom: "+defaultMinZoomLim);
+// console.log("defaultn max zoom: "+defaultMaxZoomLim)
 
 const minZoomLim = 0.5;
 const maxZoomLim = 25;
