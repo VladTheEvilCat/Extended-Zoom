@@ -2,6 +2,8 @@
 
 const defaultMinZoomLim = Vars.renderer.minZoom;
 const defaultMaxZoomLim = Vars.renderer.maxZoom;
+console.log("default min zoom: "+defaultMinZoomLim);
+console.log("defaultn max zoom: "+defaultMaxZoomLim)
 
 const minZoomLim = 0.5;
 const maxZoomLim = 25;
@@ -11,22 +13,22 @@ const minZoom = 0.75;
 const maxZoom = 20;
 
 function resetZoomLim(toOriginal){
-	if(!Vars.headless){
-		if(toOriginal){
-			Vars.renderer.minZoom = defaultMinZoomLim;
-	  	Vars.renderer.maxZoom = defaultMaxZoomLim;
-		} else {
-	  	Vars.renderer.minZoom = minZoomLim;
-	  	Vars.renderer.maxZoom = maxZoomLim;
-	  }
-	}
+	if(toOriginal){
+		Vars.renderer.minZoom = defaultMinZoomLim;
+  	Vars.renderer.maxZoom = defaultMaxZoomLim;
+	} else {
+  	Vars.renderer.minZoom = minZoomLim;
+  	Vars.renderer.maxZoom = maxZoomLim;
+  }
 }
+
 
 function updateZoom(min, max){
-	if(!Vars.headless){
-	  Vars.renderer.minZoom = min;
-	  Vars.renderer.maxZoom = max;
-	}
+
+  Vars.renderer.minZoom = min;
+  Vars.renderer.maxZoom = max;
 }
 
-updateZoom(minZoomLim,maxZoomLim)
+if(!Vars.headless){
+	updateZoom(minZoomLim,maxZoomLim)
+}
